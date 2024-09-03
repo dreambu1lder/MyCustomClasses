@@ -63,7 +63,7 @@ public class MyCustomArray<T> {
      */
     private void initializeFromArray(T[] initialElements) {
         if (initialElements == null) {
-            throw new NullPointerException("Initial elements array cannot be null");
+            throw new NullPointerException("Массив начальных элементов не может быть пустым");
         }
         System.arraycopy(initialElements, 0, array, 0, initialElements.length);
         size = initialElements.length;

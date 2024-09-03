@@ -14,7 +14,7 @@ public class QuickSortTest {
 
         QuickSort.sort(array, Comparator.naturalOrder());
 
-        assertArrayEquals(expected, array, "The array should be sorted in ascending order.");
+        assertArrayEquals(expected, array, "Массив должен быть отсортирован в порядке возрастания.");
     }
 
     @Test
@@ -24,7 +24,7 @@ public class QuickSortTest {
 
         QuickSort.sort(array, Comparator.reverseOrder());
 
-        assertArrayEquals(expected, array, "The array should be sorted in descending order.");
+        assertArrayEquals(expected, array, "Массив должен быть отсортирован в порядке убывания.");
     }
 
     @Test
@@ -34,7 +34,7 @@ public class QuickSortTest {
 
         QuickSort.sort(array, Comparator.naturalOrder());
 
-        assertArrayEquals(expected, array, "The array should be sorted alphabetically.");
+        assertArrayEquals(expected, array, "Массив должен быть отсортирован в алфавитном порядке.");
     }
 
     @Test
@@ -44,7 +44,7 @@ public class QuickSortTest {
 
         QuickSort.sort(array, Comparator.reverseOrder());
 
-        assertArrayEquals(expected, array, "The array should be sorted in reverse alphabetical order.");
+        assertArrayEquals(expected, array, "Массив должен быть отсортирован в обратном алфавитном порядке.");
     }
 
     @Test
@@ -54,7 +54,7 @@ public class QuickSortTest {
 
         QuickSort.sort(array, Comparator.naturalOrder());
 
-        assertArrayEquals(expected, array, "An empty array should remain empty after sorting.");
+        assertArrayEquals(expected, array, "Пустой массив должен оставаться пустым после сортировки.");
     }
 
     @Test
@@ -64,7 +64,7 @@ public class QuickSortTest {
 
         QuickSort.sort(array, Comparator.naturalOrder());
 
-        assertArrayEquals(expected, array, "A single-element array should remain unchanged after sorting.");
+        assertArrayEquals(expected, array, "Массив с одним элементом должен остаться без изменений после сортировки.");
     }
 
     @Test
@@ -74,7 +74,7 @@ public class QuickSortTest {
 
         QuickSort.sort(array, Comparator.naturalOrder());
 
-        assertArrayEquals(expected, array, "An already sorted array should remain unchanged.");
+        assertArrayEquals(expected, array, "Уже отсортированный массив должен остаться без изменений.");
     }
 
     @Test
@@ -84,6 +84,6 @@ public class QuickSortTest {
 
         QuickSort.sort(array, Comparator.naturalOrder());
 
-        assertArrayEquals(expected, array, "The array with duplicates should be sorted correctly.");
+        assertArrayEquals(expected, array, "Массив с дубликатами должен быть отсортирован правильно.");
     }
 }

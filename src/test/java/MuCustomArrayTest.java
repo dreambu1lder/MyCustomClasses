@@ -157,7 +157,7 @@ public class MuCustomArrayTest {
 
         myArray.sort(Comparator.naturalOrder());
 
-        assertArrayEquals(expected, myArray.toArray(), "The array should be sorted in ascending order.");
+        assertArrayEquals(expected, myArray.toArray(), "Массив должен быть отсортирован в порядке возрастания.");
     }
 
     @Test
@@ -172,7 +172,7 @@ public class MuCustomArrayTest {
 
         myArray.sort(Comparator.reverseOrder());
 
-        assertArrayEquals(expected, myArray.toArray(), "The array should be sorted in descending order.");
+        assertArrayEquals(expected, myArray.toArray(), "Массив должен быть отсортирован в порядке убывания.");
     }
 
     @Test
@@ -183,7 +183,7 @@ public class MuCustomArrayTest {
 
         myArray.sort(Comparator.naturalOrder());
 
-        assertArrayEquals(expected, myArray.toArray(), "Empty array should remain unchanged.");
+        assertArrayEquals(expected, myArray.toArray(), "Пустой массив должен остаться без изменений.");
     }
 
     @Test
@@ -195,6 +195,6 @@ public class MuCustomArrayTest {
 
         myArray.sort(Comparator.naturalOrder());
 
-        assertArrayEquals(expected, myArray.toArray(), "Single-element array should remain unchanged.");
+        assertArrayEquals(expected, myArray.toArray(), "Массив с одним элементом должен остаться без изменений.");
     }
 }
