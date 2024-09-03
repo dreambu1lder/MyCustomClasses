@@ -1,4 +1,4 @@
-import org.example.MyCustomArray.MyCustomArray;
+import org.example.collections.MyCustomArray.MyCustomArray;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

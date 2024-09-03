@@ -1,4 +1,4 @@
-import org.example.MyCustomArray.QuickSort;
+import org.example.collections.util.QuickSort;
 import org.junit.jupiter.api.Test;
 
 import java.util.Comparator;

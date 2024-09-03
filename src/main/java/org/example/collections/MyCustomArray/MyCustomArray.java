@@ -1,4 +1,6 @@
-package org.example.MyCustomArray;
+package org.example.collections.MyCustomArray;
+
+import org.example.collections.util.QuickSort;
 
 import java.util.Arrays;
 import java.util.Comparator;

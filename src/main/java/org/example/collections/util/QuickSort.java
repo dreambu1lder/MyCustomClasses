@@ -1,4 +1,4 @@
-package org.example.MyCustomArray;
+package org.example.collections.util;
 
 import java.util.Comparator;
 
