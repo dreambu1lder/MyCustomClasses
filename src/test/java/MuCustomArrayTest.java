@@ -2,6 +2,8 @@ import org.example.MyCustomArray.MyCustomArray;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Comparator;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MuCustomArrayTest {
@@ -141,5 +143,58 @@ public class MuCustomArrayTest {
         }
         assertEquals(20, myCustomArray.size());
         assertEquals(19, myCustomArray.get(19));
+    }
+
+    @Test
+    void testSortWithComparator() {
+        MyCustomArray<Integer> myArray = new MyCustomArray<>();
+        myArray.add(5);
+        myArray.add(3);
+        myArray.add(8);
+        myArray.add(1);
+
+        Integer[] expected = {1, 3, 5, 8};
+
+        myArray.sort(Comparator.naturalOrder());
+
+        assertArrayEquals(expected, myArray.toArray(), "The array should be sorted in ascending order.");
+    }
+
+    @Test
+    void testSortWithReverseOrderComparator() {
+        MyCustomArray<Integer> myArray = new MyCustomArray<>();
+        myArray.add(5);
+        myArray.add(3);
+        myArray.add(8);
+        myArray.add(1);
+
+        Integer[] expected = {8, 5, 3, 1};
+
+        myArray.sort(Comparator.reverseOrder());
+
+        assertArrayEquals(expected, myArray.toArray(), "The array should be sorted in descending order.");
+    }
+
+    @Test
+    void testSortEmptyArray() {
+        MyCustomArray<Integer> myArray = new MyCustomArray<>();
+
+        Integer[] expected = {};
+
+        myArray.sort(Comparator.naturalOrder());
+
+        assertArrayEquals(expected, myArray.toArray(), "Empty array should remain unchanged.");
+    }
+
+    @Test
+    void testSortSingleElementArray() {
+        MyCustomArray<Integer> myArray = new MyCustomArray<>();
+        myArray.add(10);
+
+        Integer[] expected = {10};
+
+        myArray.sort(Comparator.naturalOrder());
+
+        assertArrayEquals(expected, myArray.toArray(), "Single-element array should remain unchanged.");
     }
 }
